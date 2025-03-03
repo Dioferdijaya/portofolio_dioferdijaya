@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.wallpaperflare.com/neon-4k-hd-best-for-desktop-wallpaper-tzqva') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+
+
+.navbar {
+    background-color: #800000; /* Merah marun gelap */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+.container1 {
+        padding: 50px;
+        text-align: center;
+}
+.container2 {
+    background-color: rgb(34, 25, 25); color: white; text-align: center; padding: 15px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.photo-container img {
+    width: 250px;
+    border-radius: 15px;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.photo-container::before {
+    content: \"\";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #ff7eb3, #800000, #004d40);
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(50px);
+}
